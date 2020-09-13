@@ -1,22 +1,46 @@
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fnhristov%2Fsapper-template-rollup.svg?type=small)](https://app.fossa.com/projects/git%2Bgithub.com%2Fnhristov%2Fsapper-template-rollup?ref=badge_small)
+[![Github forks](https://img.shields.io/badge/starter-sapper--tailwind-blue?style=for-the-badge)](https://github.com/Christian-Rau/saptail-autoprefixer/network)
+[![GitHub forks](https://img.shields.io/github/forks/Christian-Rau/saptail-autoprefixer?style=for-the-badge)](https://github.com/Christian-Rau/saptail-autoprefixer/network)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![GitHub issues](https://img.shields.io/github/issues/Christian-Rau/saptail-autoprefixer?style=for-the-badge)](https://github.com/Christian-Rau/saptail-autoprefixer/issues)
+![GitHub last commit](https://img.shields.io/github/last-commit/Christian-Rau/saptail-autoprefixer?style=for-the-badge)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FChristian-Rau%2Fsaptail-autoprefixer.svg?type=small)](https://app.fossa.com/projects/git%2Bgithub.com%2FChristian-Rau%2Fsaptail-autoprefixer?ref=badge_small)
 
-# sapper-template-rollup
+# saptail-autoprefixer
+### *a SAPPER tailwindCSS base-template*
+A modified default [Sapper](https://github.com/sveltejs/sapper) template, with [TailwindCSS](https://tailwindcss.com/), added is a simple navbar with hamburger-menu.
+<p>
+  <figure>
+    <img src="./static/SapperBaseTemplate.png" />
+  </figure>
+</p>
 
-A modified default [Sapper](https://github.com/sveltejs/sapper) template, available for Rollup.
+## Table of contents
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Setup](#setup)
+* [Structure](#structure)
+* [Credits](#sources)
 
-## Getting started
+## General info
+The purpose of this template is to form the basis for future projects developed in SAPPER. Since this is a base template, most of the CSS styling is removed, and the remaining CSS is re-written in TailwindCSS.
 
-### Using `degit`
+## Technologies
+Project is created with:
+* Sapper
+* TailwindCSS
+* PostCSS
+* PurgeCSS
+* Autoprefixer
+* Prettier
+* Live reloading / with ```npm run dev``` only
 
-[`degit`](https://github.com/Rich-Harris/degit) is a scaffolding tool that lets you create a directory from a branch in a repository.
-
+## Setup
 ```bash
 # for Rollup with postcss, purgecss, cssnano, tailwindcss and svelte-preprocess
-npx degit "nhristov/sapper-template-rollup" my-app
+git clone https://github.com/Christian-Rau/saptail-autoprefixer.git my-app
 ```
 
 ### Running the project
-
 However you get the code, you can install dependencies and run the project in development mode with:
 
 ```bash
@@ -47,9 +71,9 @@ This is the heart of your Sapper app. There are two kinds of routes — _pages_,
 
 There are three simple rules for naming the files that define your routes:
 
--   A file called `src/routes/about.svelte` corresponds to the `/about` route. A file called `src/routes/blog/[slug].svelte` corresponds to the `/blog/:slug` route, in which case `params.slug` is available to the route
--   The file `src/routes/index.svelte` (or `src/routes/index.js`) corresponds to the root of your app. `src/routes/about/index.svelte` is treated the same as `src/routes/about.svelte`.
--   Files and directories with a leading underscore do _not_ create routes. This allows you to colocate helper modules and components with the routes that depend on them — for example you could have a file called `src/routes/_helpers/datetime.js` and it would _not_ create a `/_helpers/datetime` route
+- A file called `src/routes/about.svelte` corresponds to the `/about` route. A file called `src/routes/blog/[slug].svelte` corresponds to the `/blog/:slug` route, in which case `params.slug` is available to the route
+- The file `src/routes/index.svelte` (or `src/routes/index.js`) corresponds to the root of your app. `src/routes/about/index.svelte` is treated the same as `src/routes/about.svelte`.
+- Files and directories with a leading underscore do _not_ create routes. This allows you to colocate helper modules and components with the routes that depend on them — for example you could have a file called `src/routes/_helpers/datetime.js` and it would _not_ create a `/_helpers/datetime` route
 
 ### static
 
@@ -93,3 +117,6 @@ npm install -D @sveltejs/svelte-virtual-list
 ## Bugs and feedback
 
 Sapper is in early development, and may have the odd rough edge here and there. Please be vocal over on the [Sapper issue tracker](https://github.com/sveltejs/sapper/issues).
+
+## Sources
+This template is based upon the [Nikola Hristov´s](https://github.com/nhristov/sapper-template-rollup) sapper-template-rollup
