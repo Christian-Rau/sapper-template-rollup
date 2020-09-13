@@ -1,0 +1,16 @@
+/* Component styling example */
+.btn {
+  @apply font-bold;
+  @apply py-2;
+  @apply px-4;
+  @apply rounded;
+}
+.btn:hover {
+  @apply bg-blue-700;
+  transform: translateY(-1px);
+}
+@screen md {
+  .btn {
+    @apply inline-block;
+  }
+}
