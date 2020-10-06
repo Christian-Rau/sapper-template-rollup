@@ -27,8 +27,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <nav class="flex flex-wrap items-center p-1 bg-transparent">
 	<!-- logo section -->
-	<a class="inline-flex flex-wrap items-center p-2" href=".">
-		<h3 class="uppercase"><span class="font-bold">base</span>template</h3>
+	<a class="inline-flex flex-wrap items-center" href=".">
+		<h3 class="m-2 uppercase"><span class="font-bold">base</span>template</h3>
 	</a>
 	<!-- burger section -->
 	<button class="inline-flex p-2 ml-auto text-gray-700 rounded-full md:hidden hover:bg-gray-300 focus:outline-none"
