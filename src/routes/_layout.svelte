@@ -1,24 +1,26 @@
 <script>
-	import Nav from "../components/Nav.svelte";
+	// import Nav from "../components/Nav.svelte";
 	import Stylesheet from "../components/Stylesheet.svelte";
 
-	export let segment;
+	// export let segment;
 </script>
 
 <style>
 	main {
 		position: relative;
-		max-width: 56em;
-		background-color: white;
-		padding: 2em;
-		margin: 0 auto;
+		/* max-width: 56em; */
+		/* background-color: white; */
+		/* padding: 2em; */
+		/* margin: 0 auto; */
 		box-sizing: border-box;
+		height: 100vh;
 	}
 </style>
 
 <Stylesheet />
 
-<Nav segment="{segment}" />
+<!-- <Nav segment="{segment}" /> -->
+<!-- <Hero /> -->
 
 <main>
 	<slot />

@@ -9,30 +9,21 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  -->
 <script>
-	import TestComponent from "../components/TestComponent.svelte";
+	import Hero from "../components/Hero.svelte";
+	import Footer from "../components/Footer.svelte";
+	import Header from "../components/Header.svelte";
 </script>
 
 <style>
-	.centerer {
-		display: flex;
-		flex: 1 1 0%;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
+
 </style>
 
 <svelte:head>
 	<title>Sapper base-template</title>
 </svelte:head>
 
+<Header />
 
+<Hero />
 
-<div class="flex flex-col w-full h-64 leading-none">
-	<div class="flex flex-col flex-1" id="sapper">
-		<div class:centerer={true}>
-			<!-- Here's how you could extract conditional class groups with @apply -->
-			<TestComponent title="Sapper TailwindCSS Starter" paragraph="This is an example component." />
-		</div>
-	</div>
-</div>
+<Footer />
